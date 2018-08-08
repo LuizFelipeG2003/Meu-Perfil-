@@ -1,34 +1,115 @@
 body {
 	width: 600px;
 	margin: 0 auto;
-	background-color: #00688B;
+	position: relative;
+	background: #363636;
 }
-h1 {
-	margin: 0
-	padding: 20px 0;
-	color: #00539F
-	text-shadow: 3px 3px 1px black;
+@media( max-width: 768px) {
+	body{
+		background: #00FFFF;
+	}
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	body{
+		background: #363636;	
+	}
 }
 .ft-perfil{
-	width: 50%;
+	border: solid;
 	border-radius: 50%;
-	animation-duration: 6s;
-	animation-name: slide;
-	animation-iteration-count: infinite;
+	position: absolute;
+	top: 20%;
+	left: 17%;
 }
-img{
-	border-radius: 200px
-}
-@keyframes slide {
-	from {
-		margin-left: 50%;
-		width: 100%
+@media(max-width: 678px){
+	.ft-perfil{
+		left: 6%;	
 	}
-	to {
-		margin-left: 10%;
-		width: 70%
-	}	
-.circle:hover
-{
-        border-radius:50%;
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	.ft-perfil{
+		top: 20%;
+		left: 25%;	
+	}
+}
+.titulo {
+	margin: 0
+	padding: 20px 0;
+	color: #fff;
+	text-shadow: 3px 3px 1px black;
+	position: absolute;
+	top: 65%;
+	left: 33%;
+}
+@media(max-width: 678px){
+	.titulo{
+		left: 23%;	
+	}
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	.titulo{
+		top: 50%;
+		left: 40%;	
+	}
+}
+.face {
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+}
+@media(max-width: 678px){
+	.face{
+		left: 40%;	
+	}
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	.face{
+		left: 55%;	
+	}
+}
+.workplace {
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 36%;
+}
+@media(max-width: 678px){
+	.workplace{
+		left: 25%;	
+	}
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	.workplace{
+		left: 40%;	
+	}
+}
+.insta {
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 20%;
+}
+@media(max-width: 678px){
+	.insta{
+		left: 8%;	
+	}
+}
+@media(min-width: 768px) and (max-width: 1366px){
+	.insta{
+		left: 25%;	
+	}
+}
+.criador{
+	color: #fff;
+	position: absolute;
+	top: 95%;
+}
+@media (max-width: 678px){
+	.criador{
+		top: 170%;
+	}
 }
